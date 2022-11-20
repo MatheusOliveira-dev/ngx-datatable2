@@ -1,24 +1,20 @@
-# Ngx Data Table
+# Ngx Data Table 2
 
-**Ngx Data Table** is an angular library for presenting data in table. This library is easy to integrate in your angular component. This library supports search, pagination features, cell template, sorting, alignment, warping. You can also customize this library as your requirements.
+**Ngx Data Table 2** is an angular library for presenting data in table. This library is easy to integrate in your angular component. This library supports search, pagination features, cell template, sorting, alignment, warping. You can also customize this library as your requirements.
 
-Building this library is inspired by jQuery Datatable, ngx-easy-table and @swimlane/ngx-datatable.
+Building this library is inspired by jQuery Datatable, ngx-easy-table, @swimlane/ngx-datatable and @tusharghoshbd/ngx-datatable.
 
 
 ## Demo
 ![](https://media2.giphy.com/media/U6eXMuh4OSAiuSsmiF/200.gif)
 
 
-[Demo example](https://tusharghoshbd.github.io/ngx-datatable/#)
-
-[Demo in stackblitz](https://stackblitz.com/edit/ngx-datatable-angular?file=src/app/app.component.ts)
-
 ## Installation
 
 As a prerequisite, you need [boostrap](https://getbootstrap.com/) library.
 
 ```ts
-npm i @tusharghoshbd/ngx-datatable
+npm i @matheusjoliveira/ngx-datatable2
 ```
 
 
@@ -27,13 +23,13 @@ npm i @tusharghoshbd/ngx-datatable
 
 #### Html file
 ```html
-<ngx-datatable 
+<ngx-datatable2
    tableClass = "table table-striped table-bordered table-hover"
    [data]="data"
    [options]="options" 
    [columns]="columns"
  >
- </ngx-datatable >
+ </ngx-datatable2 >
 ```
 
 #### Ts file
@@ -70,12 +66,12 @@ ngOnInit(): void {
 
 #### Module file
 ```ts
-import { NgxDatatableModule } from '@tusharghoshbd/ngx-datatable';
+import { NgxDatatableModule2 } from '@matheusjoliveira/ngx-datatable2';
 
 @NgModule({
    imports:[ 
              ... 
-             NgxDatatableModule 
+             NgxDatatableModule2
           ]
 })
 ```
@@ -90,7 +86,16 @@ import { NgxDatatableModule } from '@tusharghoshbd/ngx-datatable';
    'rowPerPage': 10,
    'loader': false,
    'checkboxes':false,
-   'rowDetailTemplate': null
+   'rowDetailTemplate': null,
+   "searchPlaceholder": "Search",
+   "paginationLabels": {
+        "showing": "Showing",
+        "to": "to",
+        "of": "of",
+        "entries": "entries",
+        "previousLabel": "Previous",
+        "nextLabel": "Next"
+    }
 }
 ```
 #### Default/mandatory column fields
@@ -127,9 +132,6 @@ import { NgxDatatableModule } from '@tusharghoshbd/ngx-datatable';
 * Easy to integrate and less CSS work
 
 
-**All features examples are available in 
-[Demo in stackblitz](https://stackblitz.com/edit/ngx-datatable-angular?file=src/app/app.component.ts)** 
-
 ## Upcoming features
 * Column wise search
 * Row grouping features
@@ -139,7 +141,6 @@ import { NgxDatatableModule } from '@tusharghoshbd/ngx-datatable';
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
 
 
 ## License
