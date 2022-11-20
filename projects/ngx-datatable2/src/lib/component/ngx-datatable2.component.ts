@@ -16,13 +16,14 @@ export class NgxDatatableComponent implements OnInit, AfterContentInit, OnChange
     private customOptions = {
         'emptyDataMessage': 'No data available in table',
         'rowClickEvent': false,
+        'enableChangeRowPerPageMenu': true,
         'rowPerPageMenu': [10, 20, 50, 100],
         'rowPerPage': 10,
-        'enableChangeRowPerPageMenu': true,
         'showLoader': false,
         'loaderText': 'Loading...',
         'checkboxes': false,
         'rowDetailTemplate': undefined,
+        'enableSearch': true,
         'searchPlaceholder': 'Search',
         'showOnlyTotalRowsPerPage': false,
         'paginationLabels':

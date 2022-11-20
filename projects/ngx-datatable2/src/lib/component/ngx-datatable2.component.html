@@ -6,7 +6,7 @@
     <div class="dataTables_wrapper">
         <!-- search bar with page per item -->
         <div class="row no-row-margin" style="margin-top: 5px;">
-            <div class="col-xs-6 col-sm-6 col-6 text-left">
+            <div *ngIf="options.enableSearch == true" class="col-xs-6 col-sm-6 col-6 text-left">
                 <label style="font-weight: 100;">
                     <input type="text" [id]="'search_'+tableId" [(ngModel)]="searchText" (input)="onInputSearch()"
                         name="search" [placeholder]="options.searchPlaceholder" autocomplete="off"
@@ -23,6 +23,10 @@
                 </label>
             </div>
         </div>
+
+        <br *ngIf="options.enableSearch == true || options.enableChangeRowPerPageMenu == true">
+        <hr *ngIf="options.enableSearch == true || options.enableChangeRowPerPageMenu == true">
+
         <div class="zui-wrapper">
             <div class="zui-scroller" [style.margin-left]="styleParams.pinnedScollerMarginLeft+'px'">
                 <table [id]="tableId" class=" zui-table dataTable  {{tableClass}}" role="grid"

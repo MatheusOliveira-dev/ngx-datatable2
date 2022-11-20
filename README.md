@@ -82,13 +82,14 @@ import { NgxDatatable2Module } from '@matheusjoliveira/ngx-datatable2';
 {
    'emptyDataMessage': 'No data available in table',
    'rowClickEvent': false,
+   'enableChangeRowPerPageMenu': true,
    'rowPerPageMenu': [10, 20, 50, 100],
    'rowPerPage': 10,
-   'enableChangeRowPerPageMenu': true,
    'showLoader': false,
    'loaderText': 'Loading...',
    'checkboxes':false,
    'rowDetailTemplate': null,
+   'enableSearch': true,
    'searchPlaceholder': 'Search',
    'showOnlyTotalRowsPerPage': false,
    'paginationLabels': {
