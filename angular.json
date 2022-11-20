@@ -1,0 +1,43 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ngx-datatable2": {
+      "projectType": "library",
+      "root": "projects/ngx-datatable2",
+      "sourceRoot": "projects/ngx-datatable2/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-datatable2/tsconfig.lib.json",
+            "project": "projects/ngx-datatable2/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-datatable2/src/test.ts",
+            "tsConfig": "projects/ngx-datatable2/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-datatable2/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-datatable2/tsconfig.lib.json",
+              "projects/ngx-datatable2/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ngx-datatable2"
+}
