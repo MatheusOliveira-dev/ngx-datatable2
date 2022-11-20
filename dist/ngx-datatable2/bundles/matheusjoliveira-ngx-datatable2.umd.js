@@ -854,10 +854,10 @@
      * @fileoverview added by tsickle
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var NgxDatatableModule = /** @class */ (function () {
-        function NgxDatatableModule() {
+    var NgxDatatable2Module = /** @class */ (function () {
+        function NgxDatatable2Module() {
         }
-        NgxDatatableModule.decorators = [
+        NgxDatatable2Module.decorators = [
             { type: core.NgModule, args: [{
                         declarations: [NgxDatatableComponent, SearchPipe, SortPipe, CaptionComponent],
                         imports: [
@@ -869,11 +869,11 @@
                         exports: [NgxDatatableComponent, CaptionComponent]
                     },] }
         ];
-        return NgxDatatableModule;
+        return NgxDatatable2Module;
     }());
 
+    exports.NgxDatatable2Module = NgxDatatable2Module;
     exports.NgxDatatableComponent = NgxDatatableComponent;
-    exports.NgxDatatableModule = NgxDatatableModule;
     exports.ɵa = DataShowingService;
     exports.ɵb = CaptionComponent;
     exports.ɵc = SearchPipe;

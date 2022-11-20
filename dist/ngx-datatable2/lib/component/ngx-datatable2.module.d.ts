@@ -1,2 +1,2 @@
-export declare class NgxDatatableModule {
+export declare class NgxDatatable2Module {
 }

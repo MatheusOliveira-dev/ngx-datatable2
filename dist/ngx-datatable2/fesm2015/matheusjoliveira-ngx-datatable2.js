@@ -540,9 +540,9 @@ SortPipe.decorators = [
  * @fileoverview added by tsickle
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-class NgxDatatableModule {
+class NgxDatatable2Module {
 }
-NgxDatatableModule.decorators = [
+NgxDatatable2Module.decorators = [
     { type: NgModule, args: [{
                 declarations: [NgxDatatableComponent, SearchPipe, SortPipe, CaptionComponent],
                 imports: [
@@ -565,5 +565,5 @@ NgxDatatableModule.decorators = [
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
-export { NgxDatatableComponent, NgxDatatableModule, DataShowingService as ɵa, CaptionComponent as ɵb, SearchPipe as ɵc, SortPipe as ɵd };
+export { NgxDatatable2Module, NgxDatatableComponent, DataShowingService as ɵa, CaptionComponent as ɵb, SearchPipe as ɵc, SortPipe as ɵd };
 //# sourceMappingURL=matheusjoliveira-ngx-datatable2.js.map

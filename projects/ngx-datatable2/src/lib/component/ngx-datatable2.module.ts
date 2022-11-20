@@ -23,4 +23,4 @@ import { DataShowingService } from '../services/data-showing.service';
     providers: [],
     exports: [NgxDatatableComponent, CaptionComponent]
 })
-export class NgxDatatableModule { }
+export class NgxDatatable2Module { }
