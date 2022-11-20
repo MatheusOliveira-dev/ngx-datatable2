@@ -23,13 +23,13 @@ npm i @matheusjoliveira/ngx-datatable2
 
 #### Html file
 ```html
-<ngx-datatable 
+<ngx-datatable2
    tableClass = "table table-striped table-bordered table-hover"
    [data]="data"
    [options]="options" 
    [columns]="columns"
  >
- </ngx-datatable >
+ </ngx-datatable2 >
 ```
 
 #### Ts file
