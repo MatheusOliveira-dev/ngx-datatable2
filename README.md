@@ -71,7 +71,7 @@ import { NgxDatatableModule2 } from '@matheusjoliveira/ngx-datatable2';
 @NgModule({
    imports:[ 
              ... 
-             NgxDatatableModule2
+             NgxDatatable2Module
           ]
 })
 ```
