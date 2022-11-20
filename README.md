@@ -66,7 +66,7 @@ ngOnInit(): void {
 
 #### Module file
 ```ts
-import { NgxDatatableModule2 } from '@matheusjoliveira/ngx-datatable2';
+import { NgxDatatable2Module } from '@matheusjoliveira/ngx-datatable2';
 
 @NgModule({
    imports:[ 
