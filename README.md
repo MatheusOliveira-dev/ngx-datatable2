@@ -84,17 +84,20 @@ import { NgxDatatable2Module } from '@matheusjoliveira/ngx-datatable2';
    'rowClickEvent': false,
    'rowPerPageMenu': [10, 20, 50, 100],
    'rowPerPage': 10,
-   'loader': false,
+   'enableChangeRowPerPageMenu': true,
+   'showLoader': false,
+   'loaderText': 'Loading...',
    'checkboxes':false,
    'rowDetailTemplate': null,
-   "searchPlaceholder": "Search",
-   "paginationLabels": {
-        "showing": "Showing",
-        "to": "to",
-        "of": "of",
-        "entries": "entries",
-        "previousLabel": "Previous",
-        "nextLabel": "Next"
+   'searchPlaceholder': 'Search',
+   'showOnlyTotalRowsPerPage': false,
+   'paginationLabels': {
+        'showing': 'Showing',
+        'to': 'to',
+        'of': 'of',
+        'entries': 'entries',
+        'previousLabel': 'Previous',
+        'nextLabel': 'Next'
     }
 }
 ```

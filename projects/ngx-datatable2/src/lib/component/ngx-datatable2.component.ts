@@ -18,10 +18,13 @@ export class NgxDatatableComponent implements OnInit, AfterContentInit, OnChange
         'rowClickEvent': false,
         'rowPerPageMenu': [10, 20, 50, 100],
         'rowPerPage': 10,
-        'loader': false,
+        'enableChangeRowPerPageMenu': true,
+        'showLoader': false,
+        'loaderText': 'Loading...',
         'checkboxes': false,
         'rowDetailTemplate': undefined,
         'searchPlaceholder': 'Search',
+        'showOnlyTotalRowsPerPage': false,
         'paginationLabels':
         {
             'showing': 'Showing',

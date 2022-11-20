@@ -13,7 +13,7 @@
                         style="border-radius: 0px;" class="form-control input-md" />
                 </label>
             </div>
-            <div class="col-sm-6 col-xs-6 col-6 text-right">
+            <div *ngIf="options.enableChangeRowPerPageMenu == true" class="col-sm-6 col-xs-6 col-6 text-right">
                 <label style="font-weight: 100;">
                     <select (change)="onChangeItemPerPage()" style="border-radius: 0px;"
                         [(ngModel)]="options.rowPerPage" name="rowPerPage" class="form-control"
@@ -117,18 +117,18 @@
                             </tr>
                         </ng-container>
 
-                        <tr class="odd" *ngIf="!data.length && options.loader == false">
+                        <tr class="odd" *ngIf="!data.length && options.showLoader == false">
                             <td valign="top"
                                 [attr.colspan]="columns.length+(options.checkboxes?1:0)+(options.rowDetailTemplate?1:0)"
                                 class="dataTables_empty">
                                 {{options.emptyDataMessage}}
                             </td>
                         </tr>
-                        <tr class="odd" *ngIf="options.loader == true">
+                        <tr class="odd" *ngIf="options.showLoader == true">
                             <td valign="top"
                                 [attr.colspan]="columns.length+(options.checkboxes?1:0)+(options.rowDetailTemplate?1:0)"
                                 class="dataTables_empty">
-                                Loading...
+                                {{options.loaderText}}
                             </td>
                         </tr>
                     </tbody>
@@ -137,13 +137,19 @@
         </div>
         <div class="row no-row-margin" style="margin-top: 5px;">
             <div class="col-sm-6 col-xs-12 col-12 custom-data-entries-align">
-                <div> {{options.paginationLabels.showing}} {{dataShowing.start}} {{options.paginationLabels.to}}
+                <div *ngIf="options.showOnlyTotalRowsPerPage == false"> {{options.paginationLabels.showing}}
+                    {{dataShowing.start}} {{options.paginationLabels.to}}
                     {{dataShowing.end}} {{options.paginationLabels.of}} {{dataShowing.len}}
                     {{options.paginationLabels.entries}}</div>
+
+                <div *ngIf="options.showOnlyTotalRowsPerPage == true"> {{dataShowing.len}}
+                    {{options.paginationLabels.entries}}
+                </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-12 custom-pagination-align">
                 <pagination-controls [id]="'pagination_'+tableId" (pageChange)="onPageChange($event)"
-                    [previousLabel]="options.paginationLabels.previousLabel" [nextLabel]="options.paginationLabels.nextLabel"></pagination-controls>
+                    [previousLabel]="options.paginationLabels.previousLabel"
+                    [nextLabel]="options.paginationLabels.nextLabel"></pagination-controls>
             </div>
         </div>
     </div>
