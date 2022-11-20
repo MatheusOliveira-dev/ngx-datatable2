@@ -1,4 +1,4 @@
-# Ngx Data Table
+# Ngx Data Table 2
 
 **Ngx Data Table 2** is an angular library for presenting data in table. This library is easy to integrate in your angular component. This library supports search, pagination features, cell template, sorting, alignment, warping. You can also customize this library as your requirements.
 
