@@ -108,12 +108,13 @@ import { NgxDatatable2Module } from '@matheusjoliveira/ngx-datatable2';
    'key': '...',   // column key name | mandatory field 
    'title': '...', // Table column title | mandatory field
    'width': 'auto',  // default pin column width 100px 
-   'sorting': true  // default true
-   'pinned': false  // default true
+   'sorting': true,  // default true
+   'pinned': false,  // default true
    'align': { head: 'left', body: 'left' }, //default | left, right, center  
    'vAlign': { head: 'bottom', body: 'bottom' }, //default | middle, top, bottom
-   'noWrap': { head: false, body: false} //default
-   'cellTemplate':'...'  // For custom cell template
+   'noWrap': { head: false, body: false}, //default
+   'cellTemplate': '...',  // For custom cell template
+   'prop': '...' //For access prop inside data rows
 }
 ```
 

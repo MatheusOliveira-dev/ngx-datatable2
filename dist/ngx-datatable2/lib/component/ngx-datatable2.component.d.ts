@@ -46,4 +46,5 @@ export declare class NgxDatatableComponent implements OnInit, AfterContentInit, 
     onClickRowDettailAllArrowOpen(): void;
     identify(index: any, item: any): any;
     private dataShowingFn;
+    log(val: any): void;
 }

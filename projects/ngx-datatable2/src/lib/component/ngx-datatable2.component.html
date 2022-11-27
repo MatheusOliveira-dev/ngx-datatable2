@@ -96,7 +96,18 @@
                                     [style.text-align]="column.align && column.align.body"
                                     [class.zui-sticky-col]="column.pinned"
                                     [style.margin-left]="column.pinnedMarginLeft+'px'">
-                                    <ng-container *ngIf="!column.cellTemplate">{{row[column.key]}}</ng-container>
+                                    <ng-container *ngIf="!column.cellTemplate">
+
+                                        <ng-container *ngIf="column.prop">
+                                            {{ row[column.key][column.prop] }}
+                                        </ng-container>
+
+                                        <ng-container *ngIf="!column.prop">
+                                            {{ row[column.key] }}
+                                        </ng-container>
+
+                                    </ng-container>
+
                                     <ng-container *ngIf="column.cellTemplate" [ngTemplateOutlet]="column.cellTemplate"
                                         [ngTemplateOutletContext]="{
                                             $implicit: row,

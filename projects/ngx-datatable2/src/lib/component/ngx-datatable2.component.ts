@@ -116,7 +116,7 @@ export class NgxDatatableComponent implements OnInit, AfterContentInit, OnChange
 
     }
     ngAfterContentInit() {
-        //console.log(this.headerRef);
+        //console.log(this.data);
     }
     ngOnChanges(changes: SimpleChanges) {
         //console.log(changes);
@@ -203,4 +203,6 @@ export class NgxDatatableComponent implements OnInit, AfterContentInit, OnChange
         this.dataShowing.end = currentPage * itemPerPage > length ? length : currentPage * itemPerPage;
         this.dataShowing.len = length;
     }
+
+    log(val) { console.log(val); }
 }
