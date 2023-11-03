@@ -1,6 +1,6 @@
 {
   "name": "@matheusjoliveira/ngx-datatable2",
-  "version": "3.3.0",
+  "version": "4.0.0",
   "description": "Ngx-DataTable2 is an angular library for presenting data in table. This library is easy to integrate in your angular component. This library supports search, pagination features, cell template, sorting, alignment, warping. You can also customize this library as your requirements",
   "main": "bundles/matheusjoliveira-ngx-datatable2.umd.js",
   "author": "Matheus J. Oliveira",

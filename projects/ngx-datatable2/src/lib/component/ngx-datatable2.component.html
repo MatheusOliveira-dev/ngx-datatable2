@@ -79,7 +79,7 @@
                                         [class.triangle-down]="openRowDetailsId.has(row._autoId)">
                                     </div>
                                 </td>
-                                <!-- checck box code -->
+                                <!-- check box code -->
                                 <!-- [style.min-width]="options.checkboxAsPin && styleParams.pinnedFlag ? '13px' : 'auto'"
                                     [style.max-width]="options.checkboxAsPin && styleParams.pinnedFlag ? '13px' : 'auto'"
                                     [class.zui-sticky-col]="options.checkboxAsPin && styleParams['pinnedFlag']" -->
@@ -95,7 +95,8 @@
                                     [style.vertical-align]="column.vAlign && column.vAlign.body"
                                     [style.text-align]="column.align && column.align.body"
                                     [class.zui-sticky-col]="column.pinned"
-                                    [style.margin-left]="column.pinnedMarginLeft+'px'">
+                                    [style.margin-left]="column.pinnedMarginLeft+'px'"
+                                    [style.backgroundColor]="row.backgroundColorRow ? row.backgroundColorRow + ' !important' : null">
                                     <ng-container *ngIf="!column.cellTemplate">
 
                                         <ng-container *ngIf="column.prop">
